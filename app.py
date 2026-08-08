@@ -10,7 +10,7 @@ CORS(app)
 database.init_db()
 
 # Server App Version Config
-CURRENT_VERSION = "3.2"
+CURRENT_VERSION = "3.3"
 MANDATORY_UPDATE = True
 RELEASE_NOTES = "1. testing auto update and auth"
 
