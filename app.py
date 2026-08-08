@@ -10,9 +10,9 @@ CORS(app)
 database.init_db()
 
 # Server App Version Config
-CURRENT_VERSION = "3.1"
+CURRENT_VERSION = "3.2"
 MANDATORY_UPDATE = True
-RELEASE_NOTES = "1. test update"
+RELEASE_NOTES = "1. testing auto update and auth"
 
 UPDATES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "updates")
 os.makedirs(UPDATES_DIR, exist_ok=True)
@@ -74,7 +74,7 @@ def check_update():
         "status": "success",
         "version": CURRENT_VERSION,
         "is_mandatory": MANDATORY_UPDATE,
-        "download_link": f"{request.host_url}static/updates/FlipkartBot_v{CURRENT_VERSION}.zip",
+        "download_link": "https://github.com/kartikeymalvi/Flipkart-automation/releases/download/flipkart-automation/FlipkartBot_v3.1.zip",
         "release_notes": RELEASE_NOTES
     })
 
