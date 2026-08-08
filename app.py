@@ -11,8 +11,8 @@ database.init_db()
 
 # Server App Version Config
 CURRENT_VERSION = "3.1"
-MANDATORY_UPDATE = False
-RELEASE_NOTES = "1. Price mismatch alert dialog added\n2. RBI card popup bypass integrated\n3. Fast multi-threaded processing"
+MANDATORY_UPDATE = True
+RELEASE_NOTES = "1. test update"
 
 UPDATES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "updates")
 os.makedirs(UPDATES_DIR, exist_ok=True)
