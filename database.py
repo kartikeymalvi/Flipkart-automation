@@ -2,12 +2,14 @@ import sqlite3
 import os
 from werkzeug.security import generate_password_hash, check_password_hash
 
-DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "database.db")
+PERSISTENT_DIR = "/var/data" if os.path.exists("/var/data") else os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(PERSISTENT_DIR, "database.db")
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
+
 
 def init_db():
     conn = get_db_connection()
