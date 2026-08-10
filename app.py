@@ -10,9 +10,9 @@ CORS(app)
 database.init_db()
 
 # Server App Version Config
-CURRENT_VERSION = "3.4"
+CURRENT_VERSION = "3.5"
 MANDATORY_UPDATE = True
-RELEASE_NOTES = "1. testing auto update and auth"
+RELEASE_NOTES = "1. Delivery OTP & Tracking Extractor upgrade with multi-unit bulk extraction\n2. Address Manager preset fields locked to read-only except Mobile Number"
 
 UPDATES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "updates")
 os.makedirs(UPDATES_DIR, exist_ok=True)
