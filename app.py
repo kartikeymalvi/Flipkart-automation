@@ -10,9 +10,9 @@ CORS(app)
 database.init_db()
 
 # Server App Version Config
-CURRENT_VERSION = "3.10"
+CURRENT_VERSION = "3.11"
 MANDATORY_UPDATE = False
-RELEASE_NOTES = "1.updated invoice downloading /n 2.updated auto order placement for RTGS  "
+RELEASE_NOTES = "1.updated invoice downloading with url and search hybrid method   "
 
 UPDATES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "updates")
 os.makedirs(UPDATES_DIR, exist_ok=True)
