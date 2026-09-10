@@ -10,7 +10,7 @@ CORS(app)
 database.init_db()
 
 # Server App Version Config
-CURRENT_VERSION = "3.9"
+CURRENT_VERSION = "3.10"
 MANDATORY_UPDATE = False
 RELEASE_NOTES = "1.updated invoice downloading /n 2.updated auto order placement for RTGS  "
 
